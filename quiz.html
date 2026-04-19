@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>TUNISIA Quiz !</title>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                document.querySelector('#Tunis').addEventListener('click', function () {
+                    this.style.backgroundColor = 'green';
+                    document.querySelector('#result1').innerText = 'Correct';
+                });
+                document.querySelector('#Sfax').addEventListener('click', function () {
+                    this.style.backgroundColor = 'red';
+                    document.querySelector('#result1').innerText = 'Incorrect';
+                });
+                document.querySelector('#Sousse').addEventListener('click', function () {
+                    this.style.backgroundColor = 'red';
+                    document.querySelector('#result1').innerText = 'Incorrect';
+                });
+                 document.querySelector('#q2a1').addEventListener('click', function () {
+                    this.style.backgroundColor = 'green';
+                    document.querySelector('#result2').innerText = 'Correct';
+                });
+                document.querySelector('#q2a2').addEventListener('click', function () {
+                    this.style.backgroundColor = 'red';
+                    document.querySelector('#result2').innerText = 'Incorrect';
+                });
+                document.querySelector('#q2a3').addEventListener('click', function () {
+                    this.style.backgroundColor = 'red';
+                    document.querySelector('#result2').innerText = 'Incorrect';
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+           <p>As a Tunisian student, I am proud of my country and its rich culture and history.In this section, you can test your knowledge about Tunisia through a short quiz.Try to answer the questions below and see how much you know!</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h2>What Is The Capital of TUNISIA ?</h2>
+            <p id='result1' class='mt-2 fw-bold text-center'></p>
+            <button id="Tunis" class="btn btn-success m-2">Tunis</button>
+            <button id="Sfax" class="btn btn-success m-2">Sfax</button>
+            <button id="Sousse" class="btn btn-success m-2">Sousse</button>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h2>How many tourists visited TUNISIA in 2025?</h2>
+            <p id='result2' class='mt-2 fw-bold text-center'></p>
+            <button id="q2a1" class="btn btn-success m-2">11 million</button>
+            <button id="q2a2" class="btn btn-success m-2">2 million</button>
+            <button id="q2a3" class="btn btn-success m-2">6 million</button>
+        </div>
+        <div class='next-btn'>
+            <a href="hobbies.html" class="btn btn-primary">Next →</a>
+        </div>
+    </body>
+</html>
